@@ -1,0 +1,24 @@
+import { Box, Heading, RadioCards } from "@radix-ui/themes";
+import cardIpad from "../../card1.json";
+import {  CircleIcon } from "@radix-ui/react-icons";
+
+export const CardIpadColor = () => {
+  const { color } = cardIpad;
+  return (
+    <Box maxWidth="600px" mt="4" mb="5">
+      <Heading as="h2" weight="bold">Choose color</Heading>
+
+      <RadioCards.Root
+        mt="3"
+        defaultValue="1"
+        columns={{ initial: "1", sm: `${color.length}` }}
+      >
+        {color.map((item, idx) => (
+          <RadioCards.Item key={item} value={idx + 1} className="round-radio">
+                <CircleIcon color={item} fill={item} width={32} height={32}/>
+          </RadioCards.Item>
+        ))}
+      </RadioCards.Root>
+    </Box>
+  );
+};

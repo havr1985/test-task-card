@@ -1,0 +1,11 @@
+{
+    "title": "Apple iPad Mini 2021",
+    "raiting": 5,
+    "reviews": 135,
+    "memory": [64, 128, 256, "1TB"],
+    "color": ["gray", "pink", "blue", "yellow"],
+    "priceCurrent": 599.89,
+    "price": 659.89,
+    "description":"Apple's sixth-generation iPad mini tablet delivers Pro-level power in a smaller size that's better for reading, taking notes, and slipping in a jacket pocket.",
+    "imageUrl": "https://www.apemockups.com/wp-content/uploads/2021/10/Free-iPad-Mini-2021-all-Colors-Mockup-1.png"
+}
