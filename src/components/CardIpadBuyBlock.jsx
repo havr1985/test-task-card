@@ -50,9 +50,11 @@ export const CardIpadBuyBlock = () => {
           Availability: <Strong>In Stock</Strong>
         </Text>
       </Flex>
-      <Flex direction="column" mt="8"gap="4">
+      <Flex direction="column" mt="8" gap="4">
         <Button size="4">Buy Now</Button>
-        <Button size="4" color="gray">Add to Cart</Button>
+        <Button size="4" color="gray">
+          Add to Cart
+        </Button>
       </Flex>
     </Card>
   );

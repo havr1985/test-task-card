@@ -20,7 +20,7 @@ export const CardMemoryRadio = () => {
         ))}
       </RadioCards.Root>
       <Flex gap="2" align="baseline">
-        <FilePlusIcon color="gray"/>
+        <FilePlusIcon color="gray" />
         <Link href="#" color="gray" size="2" mt="2">
           {" "}
           What memory is better?

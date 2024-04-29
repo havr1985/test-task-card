@@ -15,9 +15,7 @@ export const CardIpad = () => {
             <img src={imageUrl} alt={title} width={600} height={500} />
           </Box>
           <CradIpadTitleBlock />
-          
-            <CardIpadBuyBlock/>
-          
+          <CardIpadBuyBlock />
         </Flex>
       </Card>
     </Box>

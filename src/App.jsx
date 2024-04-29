@@ -1,16 +1,11 @@
-import { CardIpad } from "./componets/CardIpad"
-
-
-
+import { CardIpad } from "./components/CardIpad";
 
 function App() {
-  
-
   return (
     <div>
-     <CardIpad/>
-   </div>
-  )
+      <CardIpad />
+    </div>
+  );
 }
 
-export default App
+export default App;

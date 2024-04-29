@@ -1,19 +1,19 @@
-import { HeartIcon, PlusCircledIcon, Share1Icon, StarFilledIcon } from "@radix-ui/react-icons";
+import { HeartIcon, PlusCircledIcon, Share1Icon } from "@radix-ui/react-icons";
 import { Box, Flex, Heading, Separator, Text } from "@radix-ui/themes";
 import { CardMemoryRadio } from "./CardMemoryRadio";
 import { CardIpadColor } from "./CardIpadColor";
-import cardIpad from '../../card1.json';
-
+import cardIpad from "../../card1.json";
+import { RatingStars } from "./RatingStars";
 
 export const CradIpadTitleBlock = () => {
-    const {title, reviews} = cardIpad;
+  const { title, reviews } = cardIpad;
   return (
     <Box>
       <Heading as="h1" size="7">
         {title}
       </Heading>
       <Flex gap="2" align="center" mb="4">
-        <StarFilledIcon color="yellow" width={30} height={30} />
+        <RatingStars />
         <Text color="gray" weight="light" size="2">
           {reviews} reviews
         </Text>
@@ -48,4 +48,4 @@ export const CradIpadTitleBlock = () => {
       </Flex>
     </Box>
   );
-}
+};
