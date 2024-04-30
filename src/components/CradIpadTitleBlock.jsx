@@ -1,9 +1,10 @@
 import { HeartIcon, PlusCircledIcon, Share1Icon } from "@radix-ui/react-icons";
 import { Box, Flex, Heading, Separator, Text } from "@radix-ui/themes";
-import { CardMemoryRadio } from "./CardMemoryRadio";
+
 import { CardIpadColor } from "./CardIpadColor";
 import cardIpad from "../../card1.json";
 import { RatingStars } from "./RatingStars";
+import { CardMemoryRadio } from "./CardMemoryRadio";
 
 export const CradIpadTitleBlock = () => {
   const { title, reviews } = cardIpad;

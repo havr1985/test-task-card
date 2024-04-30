@@ -1,9 +1,17 @@
 import { Box, Button, Card, Flex, Link, Strong, Text } from "@radix-ui/themes";
 import cardIpad from "../../card1.json";
 import { BackpackIcon, CodeSandboxLogoIcon } from "@radix-ui/react-icons";
+import toast from "react-hot-toast";
 
 export const CardIpadBuyBlock = () => {
   const { price, priceCurrent } = cardIpad;
+
+  const onClickBuy = () => {
+    const color = localStorage.getItem("color");
+    const size = localStorage.getItem("size");
+    toast.success(`You ordered Apple iPad Mini 2021 color:${color} size:${size}`);
+    
+  }
   return (
     <Card size="4">
       <Flex gap="4">
@@ -51,7 +59,7 @@ export const CardIpadBuyBlock = () => {
         </Text>
       </Flex>
       <Flex direction="column" mt="8" gap="4">
-        <Button size="4">Buy Now</Button>
+        <Button size="4" onClick={onClickBuy} >Buy Now</Button>
         <Button size="4" color="gray">
           Add to Cart
         </Button>
